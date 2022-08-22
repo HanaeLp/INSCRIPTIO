@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="brief 3.js"></script>
+    <title>Inscription</title>
+</head>
+<body>
+    <form id="T">
+        <fieldset>
+        <legend>INSCRIPTION</legend>
+        <h3 id="date"></h3>
+            <label>Nom <em>*</em></label>
+                <input id="nom" type="text" placeholder="ZOUITI" autofocus=""> 
+                <label id="ern"></label><br>
+           <label>Prénom <em>*</em></label>
+                <input id="prenom" type="text" placeholder="Hanae" autofocus="">
+                <label id="erp"></label><br>
+            <label>Date de naissance</label>
+                <input id="dateN" type="date" autofocus="">
+                <label id="erd"></label><br>
+           <label>Code postal <em>*</em></label>
+                <input id="code" type="number" placeholder="" autofocus="">
+                <label id="erC"></label><br>
+            <label>Pays <em>*</em></label>
+                <select id="pays">
+                    <option value=""disabled selected>Sélectionnez le pays</option>
+                    <option value="maroc" >Maroc</option>
+                    <option value="USA">USA</option>
+                    <option value="france">France</option>
+                </select><label id="ery"></label><br>
+                <label>Genre <em>*</em></label>
+                <label><input type="radio" placeholder="" autofocus="" name="genre">Masculin</label>
+                <label><input type="radio" placeholder="" autofocus="" name="genre">Féménin</label>
+                <label id="erg"></label><br>
+            <label>Préférences de contact <em>*</em></label>
+                <label><input type="checkbox" placeholder="" autofocus="" name="contact">Fax</label>
+                <label><input type="checkbox" placeholder="" autofocus="" name="contact">Email</label>
+                <label><input type="checkbox" placeholder="" autofocus="" name="contact">Téléphone</label>
+                <label id="erco"></label><br>
+            <label>Email <em>*</em></label>
+                <input id="email" type="email" placeholder="XXXX@gmail.com" autofocus="">
+                <label id="ere"></label><br>
+            <label>Telephone</label>
+                 <input id="tel" type="tel" placeholder="06XXXXXXXX" autofocus="" >
+                 <label id="erT"></label><br>
+            <label>Password <em>*</em></label>
+                <input id="pass" type="password" placeholder="(6-8 characters)" autofocus="" required="">
+                <label id="erpa"></label><br>
+            <label>Vérification password <em>*</em></label>
+                <input id="verif" type="password" placeholder="" autofocus="" required="">
+                <label id="erv"></label><br>
+            <input onclick="validation()" type="button" value="Envoyer">
+            <input type="reset" value="Effacer">
+        
+        </fieldset>
+    </form>
+
+    
+</body>
